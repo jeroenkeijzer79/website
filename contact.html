@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Neem contact op met Jeroen & Irene | Zang & Piano.">
+  <title>Contact | Jeroen & Irene</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Manrope%3A300%2C300italic%2C400%2C400italic%2C500%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CFraunces%3A400%2C400italic%2C500%2C600%2C700%2C700italic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCWT5JV4H2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RCWT5JV4H2');
+  </script>
+</head>
+<body class="contact-page">
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="Jeroen & Irene - Start">Jeroen &amp; Irene</a>
+    <nav class="desktop-nav" aria-label="Hoofdnavigatie">
+      <a href="./">Welkom</a>
+    <a href="repertoire.html">Repertoire</a>
+      <div class="nav-dropdown">
+        <button type="button" aria-expanded="false">Horen &amp; Zien</button>
+        <div class="nav-dropdown-menu">
+          <a href="agenda.html">Agenda</a>
+          <a href="instagram.html">Foto &amp; Video</a>
+          <a href="aanvraag.html">Aanvraag</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="over.html">Over</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-backdrop"></div>
+  <nav class="mobile-panel" aria-label="Mobiele navigatie" aria-hidden="true">
+    <button class="menu-close" type="button" aria-label="Menu sluiten">&times;</button>
+    <a href="index.html">Welkom</a>
+    <a href="repertoire.html">Repertoire</a>
+    <a href="agenda.html">Agenda</a>
+    <a href="instagram.html">Foto &amp; Video</a>
+    <a href="aanvraag.html">Aanvraag</a>
+    <a href="contact.html">Contact</a>
+    <a href="over.html">Over</a>
+  </nav>
+
+  <main class="contact-main">
+    <section class="contact-section">
+      <div class="contact-inner">
+        <h1>Contact</h1>
+        <p>Heb je een vraag of verzoek?<br>Vul dan onderstaand formulier in en we nemen z.s.m. contact met je op!</p>
+        <form class="contact-form" action="https://formsubmit.co/jeroenirenemuziek@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nieuw contactbericht via jeroenirene.nl">
+          <input type="hidden" name="_captcha" value="false">
+          <label>
+            <span>Naam</span>
+            <input type="text" name="naam" autocomplete="name" required>
+          </label>
+          <label>
+            <span>E-mailadres</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Bericht</span>
+            <textarea name="bericht" rows="6" required></textarea>
+          </label>
+          <button type="submit">Verstuur bericht</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2026 Jeroen &amp; Irene</footer>
+  <script src="script.js?v=6"></script>
+</body>
+</html>
