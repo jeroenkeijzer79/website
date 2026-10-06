@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agenda van Jeroen & Irene | Zang & Piano.">
+  <title>Agenda | Jeroen & Irene</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Manrope%3A300%2C300italic%2C400%2C400italic%2C500%2C600%2C700%2C800%7CBai+Jamjuree%3A300%2C400%2C500%2C700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCWT5JV4H2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RCWT5JV4H2');
+  </script>
+</head>
+<body class="agenda-page">
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="Jeroen & Irene - Start">Jeroen &amp; Irene</a>
+    <nav class="desktop-nav" aria-label="Hoofdnavigatie">
+      <a href="./">Welkom</a>
+    <a href="repertoire.html">Repertoire</a>
+      <div class="nav-dropdown">
+        <button type="button" aria-expanded="false">Horen &amp; Zien</button>
+        <div class="nav-dropdown-menu">
+          <a href="agenda.html">Agenda</a>
+          <a href="instagram.html">Foto &amp; Video</a>
+          <a href="aanvraag.html">Aanvraag</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="over.html">Over</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-backdrop"></div>
+  <nav class="mobile-panel" aria-label="Mobiele navigatie" aria-hidden="true">
+    <button class="menu-close" type="button" aria-label="Menu sluiten">&times;</button>
+    <a href="index.html">Welkom</a>
+    <a href="repertoire.html">Repertoire</a>
+    <a href="agenda.html">Agenda</a>
+    <a href="instagram.html">Foto &amp; Video</a>
+    <a href="aanvraag.html">Aanvraag</a>
+    <a href="contact.html">Contact</a>
+    <a href="over.html">Over</a>
+  </nav>
+
+  <main class="agenda-main">
+    <section class="agenda-inner">
+      <h1>Agenda</h1>
+      <div class="agenda-list-wrap">
+        <div class="embed-toolbar">
+          <label class="embed-filter"><input type="checkbox" id="future-only"><span>Toon alleen toekomstige evenementen</span></label>
+          <button id="show-map" class="map-button" type="button">Kaart</button>
+        </div>
+        <div id="agenda-map-panel" class="agenda-map-panel" hidden><div class="map-panel-heading"><strong>Alle optredens op de kaart</strong><button id="close-map" type="button" aria-label="Sluiten">×</button></div><div id="agenda-map" class="agenda-map"></div></div>
+        <div id="event-list" class="event-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2026 Jeroen &amp; Irene</footer>
+<script type="module" src="agenda/embed.js?v=1"></script>
+
+  <script src="script.js?v=6"></script>
+</body>
+</html>
