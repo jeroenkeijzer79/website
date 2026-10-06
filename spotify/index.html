@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpotifyList</title>
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">SpotifyList</p>
+      <h1 id="playlist-title">SpotifyList</h1>
+      <p id="playlist-meta" class="muted">Verbind met Spotify om je playlists te laden.</p>
+
+      <div class="spotify-controls">
+        <button id="spotify-login" class="spotify-button" type="button">Verbinden met Spotify</button>
+        <button id="spotify-logout" class="secondary-button" type="button" hidden>Uitloggen</button>
+        <label id="playlist-picker-wrap" class="playlist-picker" hidden>
+          <span>Kies een playlist</span>
+          <select id="playlist-picker">
+            <option value="">Playlist laden...</option>
+          </select>
+          <button id="set-default-playlist" class="default-button" type="button" hidden>★ Als standaard instellen</button>
+        </label>
+      </div>
+    </header>
+
+    <section id="track-list" class="track-list" aria-live="polite"></section>
+    <p id="error" class="error" hidden></p>
+  </main>
+  <script src="app.js?v=1"></script>
+  <footer class="version">v1.4</footer>
+</body>
+</html>
